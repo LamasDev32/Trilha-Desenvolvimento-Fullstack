@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    font-family:"Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -38,4 +38,33 @@ p > strong {
 
 p > b {
     color: #0588c4;
+}
+
+#fig {
+    font-weight: bold;
+    color: rgba(246, 240, 240, 0.785);
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: linear-gradient(black, rgba(0, 0, 0, 0.539), rgba(0, 0, 0, 0.664));
+    padding-left: 3rem;
+    width: 20rem;
+    border-radius: 0.3rem;
+    margin-top:0.5rem;
+    text-align: justify;
+}
+
+#image-principal {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.594), rgba(238, 227, 149, 0.759), rgba(128, 128, 128, 0.576));
+    width: 350px;
+    border-radius: 1rem;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+hr {
+    border: 0.1rem solid rgba(88, 87, 87, 0.156);
 }
