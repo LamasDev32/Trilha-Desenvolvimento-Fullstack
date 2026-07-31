@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+      O Novo Elemento HTML &lt;selectedcontent&gt; Vai Mudar Seus Selects
+    </title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="selectedcontent - style.css" />
+  </head>
+
+  <body>
+    <main class="wrap">
+      <span class="pill">HTML • <code>&lt;selectedcontent&gt;</code></span>
+
+      <h1>
+        O Novo Elemento HTML <code>&lt;selectedcontent&gt;</code> Vai Mudar Seus
+        Selects
+      </h1>
+
+      <p class="sub">
+        A ideia é simples: vincular um seletor a uma área que mostra o conteúdo
+        da opção escolhida. .
+      </p>
+
+      <section class="grid">
+        <div class="card">
+          <form class="form" autocomplete="off">
+            <div class="field">
+              <label for="plan">Plano</label>
+
+              <select id="plan">
+                <button><selectedcontent></selectedcontent></button>
+
+                <option value="starter">
+                  <span class="row"
+                    ><span class="badge b1">S</span><strong>Starter</strong
+                    ><span>• Ideal para testes</span></span
+                  >
+                </option>
+
+                <option value="pro" selected>
+                  <span class="row"
+                    ><span class="badge b2">P</span><strong>Pro</strong
+                    ><span>• Projetos sérios</span></span
+                  >
+                </option>
+
+                <option value="business">
+                  <span class="row"
+                    ><span class="badge b3">B</span><strong>Business</strong
+                    ><span>• Times e empresas</span></span
+                  >
+                </option>
+
+                <option value="enterprise">
+                  <span class="row"
+                    ><span class="badge b4">E</span><strong>Enterprise</strong
+                    ><span>• Escala máxima</span></span
+                  >
+                </option>
+              </select>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

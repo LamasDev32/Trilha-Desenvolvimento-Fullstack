@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+}
+
+body {
+  background: radial-gradient(1200px 600px at 0% 0%, #121d46 0, #0b1020 55%),
+    radial-gradient(900px 400px at 100% 100%, #0e1536 0, transparent 60%);
+  color: #eaf0ff;
+  font: 500 16px/1.45 Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+}
+
+.wrap {
+  width: min(980px, 92vw);
+  display: grid;
+  gap: 22px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #0b1438;
+  border: 1px solid #24306c;
+  color: #cfe0ff;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+.pill code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-weight: 700;
+  color: #ffe082;
+}
+
+h1 {
+  font-size: clamp(24px, 3.2vw, 42px);
+  line-height: 1.15;
+}
+
+.sub {
+  color: #a9b4d6;
+  max-width: 70ch;
+}
+
+.grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 1.1fr 0.9fr;
+}
+
+@media (max-width: 960px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: linear-gradient(180deg, #0f1836, #111d47);
+  border: 1px solid #24316b;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.form {
+  display: grid;
+  gap: 16px;
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+}
+
+label {
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+select {
+  appearance: none;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #24316b;
+  background: #0c1639;
+  color: #eaf0ff;
+  font: inherit;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+  min-width: 260px;
+  width: max-content;
+  /* background-image: linear-gradient(45deg, transparent 50%, #9db6ff 50%),
+    linear-gradient(135deg, #9db6ff 50%, transparent 50%); */
+  background-position: right 14px center, right 8px center;
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+}
+
+select:focus {
+  border-color: #8ab4ff;
+  box-shadow: 0 0 0 4px rgba(138, 180, 255, 0.15);
+}
+
+.card-out selectedcontent {
+  display: grid;
+  gap: 6px;
+  background: #0a1433;
+  border: 1px solid #22306a;
+  border-radius: 12px;
+  padding: 14px;
+  min-height: 56px;
+}
+
+.row {
+  display: inline-grid;
+  grid-auto-flow: column;
+  gap: 8px;
+  align-items: center;
+  width: max-content;
+  max-width: 100%;
+}
+
+.badge {
+  display: inline-grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  font-weight: 800;
+  color: #0b1020;
+}
+
+.b1 {
+  background: #7ee8fa;
+}
+
+.b2 {
+  background: #ffd166;
+}
+
+.b3 {
+  background: #88ff9b;
+}
+
+.b4 {
+  background: #9db6ff;
+}
+
+.b5 {
+  background: #ff9bd2;
+}
+
+select,
+::picker(select) {
+  appearance: base-select;
+}
+
+option {
+  padding: 5px;
+}
+
+option::checkmark {
+  display: none;
+}
+
+option:checked {
+  background-color: #ffd166;
+}
