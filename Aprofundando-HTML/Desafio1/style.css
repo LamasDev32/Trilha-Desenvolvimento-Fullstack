@@ -34,7 +34,7 @@ h2 {
 /* Header / Navagation */
 
 header {
-    background-image: linear-gradient(rgba(128, 128, 128, 0.34), rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.877)) ;
+    background-image: linear-gradient(rgba(128, 128, 128, 0.149), rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.877)) ;
 }
 
 .container_logo {
@@ -154,4 +154,28 @@ hr {
     display: flex;
     color: rgba(211, 211, 211, 0.423);
     box-shadow:5px 5px 5px 5px rgba(191, 191, 191, 0.184);
+}
+
+footer {
+    background-image: linear-gradient(rgba(211, 211, 211, 0.655), rgba(0, 0, 0, 0.775));
+}
+
+.item_footer {
+    color: white;
+}
+
+.item_footer a {
+    color: lightgray;
+    cursor: pointer;
+}
+
+.item_footer a:hover {
+    color: white;
+    font-size: 1.1rem;
+    transition: .3s ease-in-out;
+}
+
+#contato h2{
+    padding-top: 0.5rem;
+    color: white;
 }
