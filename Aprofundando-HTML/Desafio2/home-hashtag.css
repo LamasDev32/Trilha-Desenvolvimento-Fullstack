@@ -173,3 +173,33 @@ strong {
 .footer-link {
   color: #1a77a4;
 }
+
+.container-icons {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.container-icons img {
+  width: 2.5rem;
+  border-radius: 50%;
+
+}
+
+.course-boxes {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.course-package {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #dededeb9;
+  border-radius: 1.25rem;
+  width: 17rem;
+  padding: 1.25rem;
+  margin: 1.25rem 0;
+}
