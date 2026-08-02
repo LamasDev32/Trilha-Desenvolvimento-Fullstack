@@ -1,0 +1,46 @@
+html, body {
+    font-size: 10px;
+    height: 100%;
+}
+
+/* 
+
+Rem é a unidade relativa mais utilizada, pois é relativa ao tamanho da fonte do elemento raiz (html), facilitando a manutenção e a responsividade.
+
+Unidades relativas
+
+- rem: unidade relativa ao tamanho da fonte do elemento raiz (html). 1rem = 10px
+- em: unidade relativa ao tamanho da fonte do elemento pai. 1em = 10px
+- %: unidade relativa ao tamanho do elemento pai. 100% = 10px
+- vh: unidade relativa à altura da viewport. 100vh = 100% da altura da tela
+- vw: unidade relativa à largura da viewport. 100vw = 100% da largura da tela
+- vmin: unidade relativa à menor dimensão da viewport. 100vmin = 100% da menor dimensão da tela
+- vmax: unidade relativa à maior dimensão da viewport. 100vmax = 100% da maior dimensão da tela
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 1.6rem; /* 1.6 * 10px = 16px */
+    padding: 1rem; /* 1 * 10px = 10px */
+}
+
+h1 {
+    font-size: 3.2rem; /* 3.2 * 10px = 32px */
+    padding-bottom: 1.2rem; /* 1.2 * 10px = 12px */
+}
+
+div {
+    background-color: #f2f2f2;
+    padding: 10px;
+    width: 20rem; /* 20 * 10px = 200px */
+    height: 15rem; /* 15 * 10px = 150px */
+    text-align: center;
+    margin: 2rem auto; /* 2 * 10px = 20px */
+    padding: 2rem; /* 2 * 10px = 20px */
+}
