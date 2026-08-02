@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    /* Margin espaçamento externo */
+
+    /* Todos os lados */
+    /* margin: 0; */
+
+    /* Em cima e embaixo, e esquerda e direita */
+   /*  margin: 10px 25px; */
+
+    /* Cima, direita, baixo, esquerda */
+    background-color: #f0f0f0;
+    margin: 10px 20px 30px 40px;
+    padding: 10px 50px;
+}
