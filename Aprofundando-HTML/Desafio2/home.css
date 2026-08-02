@@ -30,18 +30,18 @@ strong {
   font-weight: 600;
 }
 
-.button {
+.botao {
   font-size: 24px;
   font-weight: 700;
 }
 
-.highlight-semibold {
+.realce-semibold {
   font-weight: 600;
 }
 
 /* Cabeçalho */
 
-.header-nav-item a {
+.item-lista-cabecalho a {
   color: #112e61;
   font-size: 14px;
   text-transform: uppercase;
@@ -50,7 +50,7 @@ strong {
 
 /* Seção Hero */
 
-.hero-paragraph {
+.hero-paragrafo {
   font-size: 19px;
 }
 
@@ -61,17 +61,17 @@ strong {
   font-size: 35px;
 } */
 
-.free-highlight {
+.gratuito-realce {
   color: #7a40be;
   font-weight: 600;
 }
 
-.free-subheading {
+.gratuito-h3 {
   font-size: 23px;
   font-weight: 700;
 }
 
-.free-link-list {
+.gratuito-link-lista {
   font-size: 19px;
 }
 
@@ -86,22 +86,22 @@ strong {
   font-weight: 600;
 } */
 
-.differential-paragraph {
+.diferenciais-p {
   font-size: 19px;
 }
 
-.differential-subheading {
+.diferenciais-h3 {
   color: #005e88;
   font-size: 24px;
   font-weight: 600;
 }
 
-.differential-business-heading {
+.diferenciais-h3-empresas {
   font-size: 35px;
   font-weight: 400;
 }
 
-.differential-business-heading a {
+.diferenciais-h3-empresas a {
   color: #005e88;
   font-weight: 700;
 }
@@ -114,21 +114,21 @@ strong {
 
 /* Seção Blog */
 
-.blog-posted-on {
+.blog-postadoem {
   font-size: 15px;
 }
 
-.blog-posted-on a {
+.blog-postadoem a {
   font-weight: 600;
   color: #f7a70c;
 }
 
-.blog-post-title {
+.blog-titulopost {
   font-size: 24px;
   font-weight: 600;
 }
 
-.blog-post-description {
+.blog-descricaopost {
   font-size: 17px;
 }
 
@@ -138,68 +138,38 @@ strong {
   font-weight: 600;
 } */
 
-.help-list,
-.help-paragraph {
+.comoajudar-lista,
+.comoajudar-paragrafo {
   font-size: 19px;
 }
 
-.help-list a,
-.help-paragraph a {
+.comoajudar-lista a,
+.comoajudar-paragrafo a {
   color: #008ff7;
   font-weight: 600;
 }
 
-.help-paragraph b {
+.comoajudar-paragrafo b {
   font-weight: 600;
 }
 
 /* Rodapé */
 
-.footer-title {
+.rodape-titulo {
   font-weight: 600;
   font-size: 22px;
 }
 
-.footer-subtitle {
+.rodape-subtitulo {
   font-size: 20px;
   font-weight: 500;
 }
 
-.footer-secondary-subtitle {
+.rodape-seg-subtitulo {
   font-weight: 500;
   font-size: 18px;
 }
 
-.footer-link {
+.rodape-link {
   color: #1a77a4;
-}
-
-.container-icons {
-  display: flex;
-  gap: 1.25rem;
-  align-items: center;
-  border-radius: 50%;
-}
-
-.container-icons img {
-  width: 2.5rem;
-  border-radius: 50%;
-
-}
-
-.course-boxes {
-  display: flex;
-  gap: 1.25rem;
-  flex-wrap: wrap;
-}
-
-.course-package {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #dededeb9;
-  border-radius: 1.25rem;
-  width: 17rem;
-  padding: 1.25rem;
-  margin: 1.25rem 0;
 }
