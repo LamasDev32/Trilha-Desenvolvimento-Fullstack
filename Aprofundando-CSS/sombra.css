@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+div {
+    margin: 1rem;
+    width: 20rem;
+    height: 20rem;
+    background-color: rgba(228, 227, 224, 0.696);
+    border: 1px solid rgba(239, 165, 165, 0.251);
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px 5px rgba(222, 210, 190, 0.683);
+}
