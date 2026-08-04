@@ -32,9 +32,9 @@ div {
     margin: 2rem;
     width: 20rem;
     height: 20rem;
-    background-color: rgba(247, 247, 245, 0.971);
+    background-color: rgba(236, 236, 231, 0.971);
     border-radius: 50%;
 
     /* dentro/fora, Deslocamento horizontal, deslocamento vertical, raio de desfoque, raio de propagação, cor */
-    box-shadow: inset -5rem -5rem 0.3rem -0.1rem rgba(0, 0, 0, 0.2);
+    box-shadow: inset -5rem -5rem 5rem -0.1rem rgba(0, 0, 0, 0.2);
 }
