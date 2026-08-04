@@ -16,11 +16,29 @@ body {
 
 
 div {
-    margin: 1rem;
+    margin: 2rem;
     width: 20rem;
     height: 20rem;
-    background-color: rgba(228, 227, 224, 0.696);
-    border: 1px solid rgba(239, 165, 165, 0.251);
+    background-color: rgba(255, 255, 255, 0.971);
     border-radius: 50%;
     box-shadow: 5px 5px 5px 5px rgba(222, 210, 190, 0.683);
+
+    /* Deslocamento horizontal, deslocamento vertical, cor */
+    box-shadow: 1rem 2rem rgba(0, 0, 0, 0.2);
+
+    /* Deslocamento horizontal, deslocamento vertical, raio de desfoque, cor */
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
+
+    /* Deslocamento horizontal, deslocamento vertical, raio de desfoque, raio de propagação, cor */
+    box-shadow: -5rem -5rem 0rem -2rem rgba(0, 0, 0, 0.2);
+
+    /* dentro/fora, Deslocamento horizontal, deslocamento vertical, raio de desfoque, raio de propagação, cor */
+    box-shadow: inset -5rem -5rem 0.3rem -0.1rem rgba(0, 0, 0, 0.2);
 }
+
+/* 
+
+
+
+
+*/
