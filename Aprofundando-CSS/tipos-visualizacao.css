@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+/* 
+
+    - Block ocupa todo o espaço horizontal, 
+    - Quebra linhas
+    - Box-model se aplica
+    - Padding e Margin funcionam normaalmente.
+
+*/
+h1 {
+    display: block;
+    font-size: 3.2rem;
+    height: 5rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+p, a {
+    font-size: 1.6rem;
+}
+
+/* 
+
+    - Inline ocupa apenas o espaço do conteúdo, 
+    - Não quebra linhas (Fica Lado a lado)
+    - Box-model não se aplica
+    - Padding e Margin só funcionam na horizontal.
+
+*/
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 5rem;
+    margin: 2rem;
+    background-color: rgb(117, 124, 125);
+    border-radius: 2rem;
+    color: white;
+}
+
+.container-botao{
+    display: flex;
+}
+
+/* 
+
+    - Inline-block ocupa apenas o espaço do conteúdo, 
+    - Não quebra linhas (Fica Lado a lado)
+    - Box-model se aplica
+    - Padding e Margin funcional normalmente.
+
+*/
