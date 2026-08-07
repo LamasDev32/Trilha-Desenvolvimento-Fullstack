@@ -12,6 +12,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
   line-height: 1.4;
+  background-color: aliceblue;
 }
 
 html {
@@ -54,19 +55,31 @@ figure {
   margin-bottom: 3.2rem;
 }
 
-a:link, a:visited {
+.aas:link, .aas:visited {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.842);
+  width: 40rem;
+  height: 5rem;
+  text-align: center;
+  border-radius: 1rem;
+  padding: 0.5rem;
   color: #c44105;
   font-size: 2.4rem;
   font-weight: 700;
   text-decoration: double;
   margin-bottom: 2.4rem;
-  transition: .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-a:hover, a:active {
+.aas:hover, .aas:active {
+  display: inline-block;
   background-image: linear-gradient(180deg, black, lightgrey);
   border-radius: 2rem;
-  color: #fbfdff;
+  padding: 2rem;
+  width: 35rem;
+  height: 10rem;
+  text-align: center;
+  color: #831612;
 }
 
 ul {
@@ -82,6 +95,8 @@ li {
 }
 
 section {
+  background-color: white;
+  margin: 1rem;
   padding: 2.4rem;
 }
 
@@ -107,4 +122,66 @@ p strong {
 .realce-underline {
   color: #0588c4;
   text-decoration: underline;
+}
+
+.condicoes {
+  display: inline-block;
+  background-image: linear-gradient(45deg, blue, rgb(42, 77, 88), rgba(104, 94, 94, 0.877));
+  border-radius: 2rem;
+  text-align: center;
+  padding: 1.5rem;
+  width: 35rem;
+  height: 15rem;
+  box-shadow: 0 0 1.6rem 0.4rem rgba(0, 0, 0, 0.300);
+  transition: all .3s ease-in-out;
+}
+
+.condicoes:hover {
+  width: 40rem;
+  height: 20rem;
+  padding: 5rem;
+}
+
+.condicoes h2 {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-shadow: 0 0 1.6rem 0.4rem rgba(0, 0, 0, 0.452);
+  margin-top: 0.7rem;
+  margin-bottom: 2.5rem;
+  border-radius: 1rem;
+}
+
+.condicoes p {
+  color: white;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.condicoes .realce-italico,
+.condicoes .realce-underline {
+  color: #78d4ff;
+}
+
+.img-wpp {
+  width: 8.5rem;
+  height: 8.5rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #035276cb;
+  color: white;
+}
+
+footer .name-footer {
+  color: rgba(20, 20, 20, 0.795);
+  font-size: 2.1rem;
+  font-weight: bold;
+  padding-right: 1rem;
 }
