@@ -55,6 +55,7 @@ strong {
     border-radius: 3rem;
     padding: 0.82rem 2.5rem;
     color: white;
+    box-shadow: 0 0.21rem 0.8rem rgba(0, 0, 0, 0.15);
 }
 
 .realce-semibold {
