@@ -45,9 +45,35 @@ nav {
 }
 
 /* Seção Hero */
+.secao-hero {
+  background-image: url('https://elegant-rabanadas-4b0397.netlify.app/Imagens/Formato%20Novo/BACKGROUN-banner-01.webp');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-botoes {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+}
+
+.hero-botao {
+  background-image: var(--gradient-botao);
+  margin-top: 1.2rem;
+  text-align: center;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+}
 
 .hero-paragrafo {
   font-size: 1.9rem;
+}
+
+.iframe-video {
+  aspect-ratio: 16/9;
+  width: 44rem;
+  border-radius: 2rem;
+  margin-bottom: 5rem;
 }
 
 /* Seção Conteúdos Gratuitos */

@@ -33,6 +33,6 @@
     --roxo: #7A40BE;
 
     /* Gradientes */
-    --gradient-botao: background-image: linear-gradient(rgb(255, 100, 94), rgb(255, 146, 83));
-    --gradient-gratuitos: background-image: linear-gradient(90deg, rgb(170, 86, 230), rgb(109, 66, 185))
+    --gradient-botao: linear-gradient(rgb(255, 100, 94), rgb(255, 146, 83));
+    --gradient-gratuitos: linear-gradient(90deg, rgb(170, 86, 230), rgb(109, 66, 185))
 }
