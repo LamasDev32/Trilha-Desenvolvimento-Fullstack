@@ -1,76 +1,26 @@
 /* 
 
-Fontes - Minor Third - 1.200: 
+Sistema de Tamanhos - https://typescale.com/ 
 
+Fontes - Minor Third - 1.200 - Em PX
 4.4 - 5.4 - 6.4 - 7.7 - 9.2 - 11.1 - 13.3 - 16 - 19.2 - 23 - 27.6 - 33.2 - 39.8 - 47.8 - 57.3 - 68.8 - 82.6
 
-Espaçamentos - Major Third - 1.250:
-
-3.3 - 4.2 - 5.2 - 6.5 - 8.2 - 0.2 - 12.8 - 16 - 20 - 25 - 31.2 - 39 - 48.8 - 61 - 76.3 - 95.4 - 119.2
+Espaçamentos - Major Third - 1.250 - Em PX
+2.1 - 2.7 - 3.3 - 4.2 - 5.2 - 6.5 - 8.2 - 10.2 - 12.8 - 16 - 20 - 25 - 31.2 - 39 - 48.8 - 61 - 76.3 - 95.4 - 119.2
 
 */
 
-/* Global */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  color: #404040;
-  font-size: 1.6rem;
-  line-height: 1.4;
-}
-
-h1 {
-  font-size: 3.5rem;
-  font-weight: 600;
-}
-
-h2 {
-  font-size: 3.5rem;
-  font-weight: 400;
-}
-
-strong {
-  font-weight: 600;
-}
-
-/* a:link, a:visited {
-
-} */
-
-/* a:hover, a:active {
-  color: #f60;
-} */
-
-.botao {
-  font-size: 2.4rem;
-  font-weight: 700;
-}
-
-.realce-semibold {
-  font-weight: 600;
-}
+@import url('assets/css/global.css');
+@import url('assets/css/variable.css');
 
 /* Cabeçalho */
-
 .cabecalho {
   position: sticky;
   top: 0;
   left: 0;
   background-color: white;
-  padding: 1.6rem 3.1rem;
-  box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.1);
+  padding: 1.6rem 3.12rem;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
 }
 
 /* Temporariamente */
@@ -79,7 +29,7 @@ nav {
 }
 
 .item-lista-cabecalho a {
-  color: #112e61;
+  color: var(--azul-marinho-escuro);
   font-size: 1.4rem;
   text-transform: uppercase;
   font-weight: 600;
@@ -87,11 +37,11 @@ nav {
 
 .item-lista-cabecalho a:hover,
 .item-lista-cabecalho a:active {
-  color: #f60;
+  color: var(--laranja);
 }
 
-.contem-filhos::after {
-  content: "\2BC6";
+.item-lista-cabecalho.contem-filhos::after {
+  content: "\2bc6";
 }
 
 /* Seção Hero */
@@ -101,14 +51,9 @@ nav {
 }
 
 /* Seção Conteúdos Gratuitos */
-/* 
-.gratuito-h2 {
-  font-weight: 400;
-  font-size: 35px;
-} */
 
 .gratuito-realce {
-  color: #7a40be;
+  color: var(--roxo);
   font-weight: 600;
 }
 
@@ -123,21 +68,12 @@ nav {
 
 /* Seção Diferenciais */
 
-/* .diferenciais-h2 {
-  font-size: 35px;
-  font-weight: 400;
-} */
-
-/* .diferenciais-h2 strong {
-  font-weight: 600;
-} */
-
 .diferenciais-p {
   font-size: 1.9rem;
 }
 
 .diferenciais-h3 {
-  color: #005e88;
+  color: var(--azul-petroleo-escuro);
   font-size: 2.4rem;
   font-weight: 600;
 }
@@ -148,15 +84,11 @@ nav {
 }
 
 .diferenciais-h3-empresas a {
-  color: #005e88;
+  color: var(--azul-petroleo-escuro);
   font-weight: 700;
 }
 
 /* Seção O que falam */
-
-/* .oquefalam-realce {
-  font-weight: 600;
-} */
 
 /* Seção Blog */
 
@@ -166,13 +98,12 @@ nav {
 
 .blog-postadoem a {
   font-weight: 600;
-  color: #f7a70c;
+  color: var(--amarelo-ouro);;
 }
 
 .blog-titulopost {
   font-size: 2.4rem;
   font-weight: 600;
-
 }
 
 .blog-descricaopost {
@@ -181,10 +112,6 @@ nav {
 
 /* Seção Como ajudar */
 
-/* .comoajudar-realce {
-  font-weight: 600;
-} */
-
 .comoajudar-lista,
 .comoajudar-paragrafo {
   font-size: 1.9rem;
@@ -192,7 +119,7 @@ nav {
 
 .comoajudar-lista a,
 .comoajudar-paragrafo a {
-  color: #008ff7;
+  color: var(--azul-vibrante);
   font-weight: 600;
 }
 
@@ -214,9 +141,9 @@ nav {
 
 .rodape-seg-subtitulo {
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.8rem;
 }
 
 .rodape-link {
-  color: #1a77a4;
+  color: var(--azul-intermediario);
 }

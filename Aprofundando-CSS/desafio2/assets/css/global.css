@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    color: var(--cinza-escuro);
+    background-color: var(--cinza-suave);
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+strong {
+    font-weight: 600;
+}
+
+.secao {
+    padding: 9.54rem 2rem;
+}
+
+.botao {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.realce-semibold {
+    font-weight: 600;
+}
+
