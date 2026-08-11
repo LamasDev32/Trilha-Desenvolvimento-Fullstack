@@ -1,9 +1,14 @@
+/*
+* Sistema de Tamanhos - https: //typescale.com/ 
+
+Fontes - Minor Third - 1.200 - Em PX 4.4 - 5.4 - 6.4 - 7.7 - 9.2 - 11.1 - 13.3 - 16 - 19.2 - 23 - 27.6 - 33.2 - 39.8 - 47.8 - 57.3 - 68.8 - 82.6 Espaçamentos - Major Third - 1.250 - Em PX 2.1 - 2.7 - 3.3 - 4.2 - 5.2 - 6.5 - 8.2 - 10.2 - 12.8 - 16 - 20 - 25 - 31.2 - 39 - 48.8 - 61 - 76.3 - 95.4 - 119.2 */
+
+/* Global */
+
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
 }
 
 html {
@@ -12,28 +17,57 @@ html {
 
 body {
     font-family: "Montserrat", sans-serif;
+    color: #404040;
     font-size: 1.6rem;
     line-height: 1.4;
-    color: var(--cinza-escuro);
-    background-color: var(--cinza-suave);
+    background-color: #f4f5f7;
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 3.32rem;
+    line-height: 1;
     font-weight: 600;
 }
 
 h2 {
-    font-size: 3.5rem;
+    font-size: 2.76rem;
+    line-height: 1.1;
     font-weight: 400;
 }
 
-p {
-    font-size: 1.6rem;
+h3,
+.blog-titulopost,
+.rodape-titulo {
+    font-size: 2.3rem;
+    line-height: 1.2;
 }
 
 strong {
     font-weight: 600;
+}
+
+ul {
+    list-style: none;
+}
+
+input {
+    padding: 1.02rem;
+    background-color: white;
+    box-shadow: inset 0 0 0.2rem 0.2rem rgba(0, 0, 0, 0.15);
+    border: 0;
+    border-radius: 0.8rem;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: #404040;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: #757575;
 }
 
 .secao {
@@ -41,24 +75,52 @@ strong {
 }
 
 .container {
-    display: flex;
-    justify-content: start;
-    align-items: flex-end;
     max-width: 100rem;
     margin: 0 auto;
+}
+
+.container-diferenciais,
+.container-blog {
+    border-radius: 5rem;
+    box-shadow: inset 0 0 0.8rem 0.3rem rgba(0, 0, 0, 0.15);
 }
 
 .botao {
     display: inline-block;
     font-size: 2.4rem;
     font-weight: 700;
+    text-decoration: none;
     border-radius: 3rem;
-    padding: 0.82rem 2.5rem;
+    padding: 0.65rem 2.5rem;
     color: white;
     box-shadow: 0 0.21rem 0.8rem rgba(0, 0, 0, 0.15);
+    border: 0;
+    border-bottom: solid 0.4rem #993c38;
+    border-right: solid 0.4rem #993c38;
 }
 
 .realce-semibold {
     font-weight: 600;
 }
 
+.hero-paragrafo,
+.comoajudar-lista,
+.comoajudar-paragrafo,
+.diferenciais-p,
+.rodape-subtitulo {
+    font-size: 1.92rem;
+    line-height: 1.3;
+}
+
+.caixa-gratuito-h3,
+.caixa-blog-h2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: inline-block;
+    padding: 0.42rem 1.6rem;
+    color: white;
+    border-radius: 1rem;
+    transform: rotate(-3deg) translate(-50%, -50%);
+    box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.15);
+}

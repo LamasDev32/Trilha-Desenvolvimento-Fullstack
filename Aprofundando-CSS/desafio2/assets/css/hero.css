@@ -1,0 +1,25 @@
+/* Seção Hero */
+
+.secao-hero {
+    background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUN-banner-01.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-botao {
+    background-image: linear-gradient(180deg, #ff645e, #ff9253);
+}
+
+.hero-botao:hover {
+    border: solid 0.2rem #ff9253;
+    background-color: #ff9253;
+    background-image: none;
+}
+
+.iframe-video {
+    display: none;
+    aspect-ratio: 16/9;
+    width: 42rem;
+    border-radius: 2.5rem;
+}

@@ -1,0 +1,33 @@
+/* Cabeçalho */
+
+.cabecalho {
+    position: sticky;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    background-color: white;
+    padding: 1.6rem 3.12rem;
+    box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+
+/* Temporário */
+nav {
+    display: none;
+}
+
+.item-lista-cabecalho a {
+    color: #112e61;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.item-lista-cabecalho a:hover,
+.item-lista-cabecalho a:active {
+    color: #f60;
+}
+
+.item-lista-cabecalho.contem-filhos::after {
+    content: "\2bc6";
+}

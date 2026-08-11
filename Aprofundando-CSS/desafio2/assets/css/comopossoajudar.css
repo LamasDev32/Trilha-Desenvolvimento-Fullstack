@@ -1,0 +1,52 @@
+/* Seção Como ajudar */
+
+.secao-comoajudar {
+    padding: 0;
+}
+
+.secao-sec-laranja {
+    background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUND-banner-07.png);
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.secao-sec-laranja,
+.secao-sec-cinza {
+    padding: 7.63rem 2rem;
+}
+
+.caixa-comoajudar-h2 {
+    display: inline-block;
+    padding: 0.42rem 1.6rem;
+    color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.15);
+    background-image: linear-gradient(90deg, #14a1d5, #1a8ad4);
+}
+
+.comoajudar-lista {
+    border-radius: 2.5rem;
+    box-shadow: inset 0 0 0.8rem 0.15rem rgba(0, 0, 0, 0.15);
+    padding: 2.5rem;
+    background-color: #f9f9f9;
+}
+
+.comoajudar-lista a:link,
+.comoajudar-lista a:visited,
+.comoajudar-paragrafo a:link,
+.comoajudar-paragrafo a:visited {
+    color: #008ff7;
+    font-weight: 600;
+}
+
+.comoajudar-lista a:hover,
+.comoajudar-lista a:active,
+.comoajudar-paragrafo a:hover,
+.comoajudar-paragrafo a:active {
+    color: #0056b3;
+}
+
+.comoajudar-paragrafo b {
+    font-weight: 600;
+}

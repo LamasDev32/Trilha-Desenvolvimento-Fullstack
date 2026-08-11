@@ -1,0 +1,78 @@
+/* Seção Diferenciais */
+
+.container-diferenciais {
+    background-color: white;
+}
+
+.caixa-titulo-diferenciais {
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+    padding: 4.88rem;
+    background-image: linear-gradient(225deg, #196b9f, #1a82a7);
+    color: white;
+}
+
+.caixa-restante-diferenciais {
+    padding: 4.88rem;
+}
+
+.caixa-itens-diferenciais {
+    position: relative;
+    border-radius: 2.5rem;
+    background-color: white;
+    box-shadow: 0 0 0.8rem 0.3rem rgba(0, 0, 0, 0.15);
+    padding: 3.12rem 2.5rem;
+}
+
+.caixa-imagem-diferenciais {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    border-radius: 1.5rem;
+    background-color: #ffaf00;
+    width: 10rem;
+    height: 10rem;
+    padding: 1.6rem;
+    box-shadow: inset 0 0 0.8rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.caixa-imagem-diferenciais img {
+    width: 100%;
+}
+
+.diferenciais-empresas img {
+    height: 5rem;
+    filter: grayscale(100%);
+}
+
+.logo-loreal,
+.logo-disney {
+    opacity: 60%;
+}
+
+.logo-subsea,
+.logo-animale {
+    opacity: 75%;
+}
+
+.caixa-diferenciais-h2 {
+    border-left: solid 0.5rem #ffb20f;
+    padding: 0.52rem 0 0.52rem 1.6rem;
+}
+
+.diferenciais-h3 {
+    color: #005e88;
+    font-weight: 600;
+}
+
+.diferenciais-h3-empresas {
+    font-weight: 400;
+}
+
+.diferenciais-h3-empresas a {
+    color: #005e88;
+    font-weight: 700;
+    text-decoration: none;
+}

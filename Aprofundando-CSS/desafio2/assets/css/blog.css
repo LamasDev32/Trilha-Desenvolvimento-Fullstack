@@ -1,0 +1,43 @@
+/* Seção Blog */
+
+.container-blog {
+    position: relative;
+    background-color: #f9f9f9;
+    padding: 4.88rem;
+}
+
+.caixa-blog-h2 {
+    width: max-content;
+    background-image: linear-gradient(90deg, #feb914, #f6a50b);
+    padding: 1.02rem 3.12rem;
+}
+
+.caixa-postblog {
+    display: inline-block;
+    border-radius: 2.5rem;
+    box-shadow: inset 0 0 0.4rem 0.15rem rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+    width: 49%;
+    background-color: #fff;
+}
+
+.caixa-postblog img {
+    width: 100%;
+}
+
+.blog-postadoem {
+    font-size: 1.33rem;
+    line-height: 1.5;
+}
+
+.blog-postadoem a {
+    font-weight: 600;
+    color: #f7a70c;
+    text-decoration: none;
+}
+
+.blog-titulopost {
+    color: inherit;
+    font-weight: 600;
+    text-decoration: none;
+}

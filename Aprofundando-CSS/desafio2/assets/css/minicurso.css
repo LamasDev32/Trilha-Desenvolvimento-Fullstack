@@ -1,0 +1,16 @@
+/* Seção Minicurso */
+
+.secao-minicurso {
+    background-image: linear-gradient(90deg, #9e4ad7, #753db6);
+    color: white;
+}
+
+.botao-minicurso {
+    background-color: #ffba29;
+    border-bottom-color: #664a10;
+    border-right-color: #664a10;
+}
+
+.botao-minicurso:hover {
+    border: solid 0.2rem #ffba29;
+}

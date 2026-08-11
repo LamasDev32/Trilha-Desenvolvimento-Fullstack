@@ -1,0 +1,90 @@
+/* Seção O que falam */
+
+.secao-oquefalam {
+    background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUN-banner-04.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.oquefalam-titulo {
+    color: white;
+}
+
+.oquefalam-carrossel {
+    position: relative;
+}
+
+.oquefalam-carrossel-img {
+    background-color: #7489af;
+    background-blend-mode: multiply;
+    position: relative;
+    display: inline-block;
+    background-position: 50%;
+    background-size: cover;
+    aspect-ratio: 16/9;
+    width: 33%;
+    border-radius: 2.5rem;
+}
+
+.oquefalam-carrossel-img--1 {
+    background-image: url(https://i3.ytimg.com/vi/N_EZD04zmrw/hqdefault.jpg);
+}
+
+.oquefalam-carrossel-img--2 {
+    background-image: url(https://i3.ytimg.com/vi/auqWeBJLJHY/hqdefault.jpg);
+}
+
+.oquefalam-carrossel-img--3 {
+    background-image: url(https://i3.ytimg.com/vi/FD79IpCaM1Y/hqdefault.jpg);
+}
+
+.oquefalam-seta {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+}
+
+.seta--esquerda {
+    left: 0;
+    transform: translate(-150%, -65%);
+}
+
+.seta--direita {
+    right: 0;
+    transform: translate(160%, -65%);
+}
+
+.seta-player {
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 3rem;
+}
+
+.item-navegacao {
+    cursor: pointer;
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background-color: #86a8bc;
+}
+
+.item-navegacao.ativa {
+    background-color: #14577f;
+}
+
+.botao-oquefalam {
+    background-image: linear-gradient(180deg, #196c9f, #1a80a7);
+    border-bottom-color: #14577f;
+    border-right-color: #14577f;
+}
+
+.botao-oquefalam:hover {
+    border: solid 0.2rem #1a80a7;
+    background-image: none;
+    background-color: #1a80a7;
+}
