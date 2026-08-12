@@ -1,4 +1,4 @@
-/* Seção O que falam */
+ /* Seção O que falam */
 
 .secao-oquefalam {
     background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUN-banner-04.png);
@@ -8,10 +8,19 @@
 }
 
 .oquefalam-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem ;
     color: white;
 }
 
+.oquefalam-titulo h2 {
+    margin-left: 1.2rem;
+}
+
 .oquefalam-carrossel {
+    margin-top: 1.5rem;
     position: relative;
 }
 
@@ -28,15 +37,15 @@
 }
 
 .oquefalam-carrossel-img--1 {
-    background-image: url(https://i3.ytimg.com/vi/N_EZD04zmrw/hqdefault.jpg);
+    background-image: url('https://i3.ytimg.com/vi/N_EZD04zmrw/hqdefault.jpg');
 }
 
 .oquefalam-carrossel-img--2 {
-    background-image: url(https://i3.ytimg.com/vi/auqWeBJLJHY/hqdefault.jpg);
+    background-image: url('https://i3.ytimg.com/vi/auqWeBJLJHY/hqdefault.jpg');
 }
 
 .oquefalam-carrossel-img--3 {
-    background-image: url(https://i3.ytimg.com/vi/FD79IpCaM1Y/hqdefault.jpg);
+    background-image: url('https://i3.ytimg.com/vi/ozTJ3cHDKBI/hqdefault.jpg');
 }
 
 .oquefalam-seta {
@@ -83,6 +92,19 @@
     border-right-color: #14577f;
 }
 
+.container-navegacao-oquefalam {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.container-botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
 .botao-oquefalam:hover {
     border: solid 0.2rem #1a80a7;
     background-image: none;
