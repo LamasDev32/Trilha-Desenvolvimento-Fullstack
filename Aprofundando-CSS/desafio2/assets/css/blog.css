@@ -7,7 +7,7 @@
 }
 
 .caixa-blog-h2 {
-    width: max-content;
+    white-space: nowrap;
     background-image: linear-gradient(90deg, #feb914, #f6a50b);
     padding: 1.02rem 3.12rem;
 }
