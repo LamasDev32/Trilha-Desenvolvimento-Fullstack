@@ -49,6 +49,13 @@
     justify-content: center;
 }
 
+.container-flex-p-comopossoajudar {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7rem;
+    justify-content: center;
+}
+
 .comoajudar-lista a:link,
 .comoajudar-lista a:visited,
 .comoajudar-paragrafo a:link,
@@ -70,5 +77,5 @@
 }
 
 .comoajudar-paragrafo {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
 }
