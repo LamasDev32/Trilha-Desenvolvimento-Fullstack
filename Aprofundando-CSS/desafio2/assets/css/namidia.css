@@ -9,7 +9,30 @@
     background-size: cover;
 }
 
-.seta-namidia,
-.h2-namidia {
-    display: inline-block;
+.container-title-namidia {
+    display: flex;
+    align-items: center;
+}
+
+.container-title-namidia h2 {
+    margin-left: 1.2rem;
+}
+
+.container-logo-midias img{
+    margin-right: 1rem;
+    position: relative;
+    z-index: 1; /* Valor padrão */
+    transition: transform 0.3s ease-in-out;
+    border-radius: 0.3rem;
+}
+
+.container-logo-midias img:hover {
+    z-index: 10; /* Valor maior traz a imagem para frente */
+    transform: scale(1.1); /* Opcional: aumenta o tamanho */
+}
+
+.container-flex-namidia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
