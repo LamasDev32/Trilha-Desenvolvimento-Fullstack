@@ -9,38 +9,8 @@
     background-color: #ffba29;
     border-bottom-color: #664a10;
     border-right-color: #664a10;
-    margin-left: 2.5rem;
-    margin-top: 3.12rem;
-}
-
-.container-title-minicurso {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2.5rem;
 }
 
 .botao-minicurso:hover {
     border: solid 0.2rem #ffba29;
 }
-
-.nao-torra {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2.5rem;
-}
-
-.campo-form-minicurso {
-    display: flex;
-    flex-direction: column;
-    margin-left: 2.5rem;
-    width: 50rem;
-}
-
-.campo-form-minicurso label {
-    margin-bottom: 1rem;
-}
-
-
-

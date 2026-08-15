@@ -60,8 +60,6 @@
 
 .gratuito-link-lista:hover,
 .gratuito-link-lista:active {
-    transition: all .3s ease-in-out;
-    color: #0056b3;
     text-decoration: underline;
 }
 

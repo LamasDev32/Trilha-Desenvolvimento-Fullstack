@@ -22,8 +22,6 @@
     background-color: white;
     box-shadow: 0 0 0.8rem 0.3rem rgba(0, 0, 0, 0.15);
     padding: 3.12rem 2.5rem;
-    margin-bottom: 6rem;
-    margin-top: 1rem;
 }
 
 .caixa-imagem-diferenciais {
@@ -41,7 +39,6 @@
 }
 
 .caixa-imagem-diferenciais img {
-    
     width: 100%;
 }
 
@@ -72,8 +69,6 @@
 
 .diferenciais-h3-empresas {
     font-weight: 400;
-    padding-bottom: 2.5rem;
-    text-align: center;
 }
 
 .diferenciais-h3-empresas a {
