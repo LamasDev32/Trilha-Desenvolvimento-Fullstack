@@ -33,3 +33,8 @@ Use let apenas quando souber que o valor da variável precisará mudar (ex: cont
 Evite usar var no JavaScript moderno (ES6+).
 
 */
+
+let nome = "Felipe Lamas";
+console.log(nome);
+
+console.log("olá, mundo!");
