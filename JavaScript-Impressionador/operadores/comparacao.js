@@ -13,6 +13,7 @@ console.log(10 < 20); //true
 console.log(10 < 10); //false
 console.log(10 <= 10); //true
 
+
 let senha = 1234;
 let senhaDigitada = 12345;
 
@@ -22,4 +23,14 @@ if(senhaDigitada !== senha) {
     console.log("Senha incorreta. Acesso negado!")
 } else {
     console.log("Seja bem-vindo!")
+}
+
+/* Par ou impar */
+
+let numero = 9
+
+if(numero % 2 === 0) {
+    console.log("par")
+} else {
+    console.log("impar")
 }
