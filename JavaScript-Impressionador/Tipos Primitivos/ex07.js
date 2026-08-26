@@ -11,7 +11,8 @@ estoque = 10;
 
 function vender() {
     if (produto === "Laptop DELL") {
-        estoque = estoque - 1;
+        estoque -= 1;
+        console.log(`Seu estoque atual é de ${estoque}`);
         console.log(
             `Sua compra do ${produto} custou ${preco}. Obrigado por comprar conosco!`,
         );

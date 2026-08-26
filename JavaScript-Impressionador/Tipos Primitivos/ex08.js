@@ -9,5 +9,5 @@ const RJ = "Rio de Janeiro";
 let populacao = 6730729;
 
 console.log(
-    `População do estado do ${RJ} Censo de 2022 é de ${populacao} habitantes!`,
+    `Durante o ultimo Censo do estado do ${RJ} de 2022 a sua população é de ${populacao} habitantes!`,
 );
