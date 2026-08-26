@@ -1,3 +1,4 @@
+/* Média utilizando operador lógico (e) && */
 let n1 = 10
 let n2 = 7
 let n3 = 5
