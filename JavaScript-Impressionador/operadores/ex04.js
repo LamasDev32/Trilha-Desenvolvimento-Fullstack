@@ -9,13 +9,15 @@ Exemplo de Saída: “A quantidade no estoque é suficiente: true”
 
 */
 
-estoque = '20'
+estoqueStr = '20'
 qtMinimaEstoque = 20
 
-estoque = Number(estoque)
+estoque = Number(estoqueStr)
 
-if(estoque >= qtMinimaEstoque) {
-    console.log("Qauntidade suficiente:", estoque >= qtMinimaEstoque)
+resultBoolean = estoque >= qtMinimaEstoque
+
+if(resultBoolean) {
+    console.log(`Qauntidade suficiente: ${resultBoolean}`)
 } else {
-    console.log("Quantidade insuficiente: ", estoque >= qtMinimaEstoque)
+    console.log(`Qauntidade suficiente: ${resultBoolean}`)
 }
