@@ -15,7 +15,7 @@ produtoDisponivel = true
 qtProdutosEstoque = 10
 qtMinimaEstoque = 15
 
-if(qtProdutosEstoque <= qtMinimaEstoque && produtoDisponivel) {
+if(qtProdutosEstoque < qtMinimaEstoque && produtoDisponivel) {
     produtoDisponivel = false
     console.log(`Produto disponível: ${produtoDisponivel}`)
 } else {
