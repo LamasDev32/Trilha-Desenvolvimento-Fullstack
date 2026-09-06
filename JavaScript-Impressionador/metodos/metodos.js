@@ -8,7 +8,7 @@ console.log(saudacao("Felipe"))
 const pessoa = {
     nome: "Felipe",
     saudacao: function() {
-        return `Olá, ${pessoa.nome}`
+        return `Olá, ${pessoa.nome}` 
     }
 }
 
