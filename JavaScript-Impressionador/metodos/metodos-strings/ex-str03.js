@@ -9,3 +9,8 @@ let palavra = str.split(" ")[1]; // divide a string em um array de palavras e pe
 
 let novaString = str.replace(palavra, "Javascript"); // substitui a palavra "Python" por "Javascript"
 console.log(novaString);
+
+let frase = "Aprendendo Python";
+let palavraExtrair = frase.slice(11); // extrai a palavra "Python" usando slice
+let novaFrase = frase.replace(palavraExtrair, "Javascript");
+console.log(novaFrase);

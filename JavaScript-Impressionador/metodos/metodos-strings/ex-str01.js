@@ -7,11 +7,11 @@ Exemplo de Saída: // “JAVASCRIPT é divertido”
 */
 
 let str1 = "javascript é divertido";
-let strUpper = str1.replace("javascript", "JAVASCRIPT"); // substitui a palavra "javascript" por "JAVASCRIPT"
+let strUpper = str1.replace("javascript", "javascript".toUpperCase()); // substitui a palavra "javascript" por "JAVASCRIPT"
 console.log(strUpper);
 
 let str2 = "javascript é divertido";
-console.log(str2.split("javascript").join("JAVASCRIPT")); // substitui a palavra "javascript" por "JAVASCRIPT" usando split e join
+console.log(str2.split("javascript").join("javascript".toUpperCase())); // substitui a palavra "javascript" por "JAVASCRIPT" usando split e join
 
 let texto = "javascript é divertido";
 let palavras = texto.split(" "); // divide a string em um array de palavras
