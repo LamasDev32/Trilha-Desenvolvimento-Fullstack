@@ -8,5 +8,19 @@ do semáforo. Utilize o operador ternário para determinar a mensagem
 */
 
 function mensagemSemaforo(corSemaforo) {
-    const mensagem = corSemaforo === "vermelho" ? "Pare o veiculo" : corSemaforo === "amarelo" ? "Reduza a velocidade" : corSemaforo === ""
+    const mensagem = 
+    corSemaforo === "vermelho" 
+        ? "Pare o veiculo" 
+        : corSemaforo === "amarelo" 
+        ? "Reduza a velocidade" 
+        : corSemaforo === "verde" 
+        ? "Siga em frente" 
+        : "Cor inválida";
+    return mensagem;
 }
+
+// Testando a função
+console.log(mensagemSemaforo("vermelho"));
+console.log(mensagemSemaforo("amarelo"));
+console.log(mensagemSemaforo("verde"));
+console.log(mensagemSemaforo("azul"));
