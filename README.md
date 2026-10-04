@@ -1,104 +1,94 @@
 # Trilha de Desenvolvimento Fullstack
 
-Bem-vindo(a) ao meu repositório de estudos da trilha de desenvolvimento fullstack da Hashtag Treinamentos.
+Este repositório reúne exercícios, desafios e materiais de aula da formação de desenvolvimento fullstack da Hashtag Treinamentos. A organização foi ajustada para facilitar a navegação e refletir melhor o conteúdo de cada módulo.
 
-Este projeto reúne os exercícios, desafios, práticas e materiais de aula que estou desenvolvendo ao longo da formação, com foco no aprendizado de HTML, CSS, lógica de desenvolvimento web e fundamentos para evoluir como profissional de tecnologia.
+## Objetivo
 
-## 🧭 Objetivo da trilha
+A trilha tem como foco construir uma base sólida em:
 
-A jornada tem como foco construir uma base sólida para atuar no desenvolvimento web, entendendo:
+- HTML e semântica de documentos
+- CSS e layout visual
+- Prática com desafios e mini projetos
+- Organização de arquivos e estrutura de pastas
+- Fundamentos para evolução para JavaScript e tecnologias do ecossistema web
 
-- Estrutura e semântica do HTML
-- Estilização e responsividade com CSS
-- Posicionamento e layout de páginas
-- Organização de arquivos e projetos front-end
-- Prática constante por meio de desafios e mini projetos
-- Preparação para evoluir para tecnologias mais avançadas no futuro
-
-## 🚀 Stack e foco atual
-
-Atualmente, a base de estudo está concentrada em:
-
-- HTML
-- CSS
-- Design de interfaces
-- Organização de estrutura de pastas e arquivos
-- Exercícios práticos e desafios de front-end
-
-## 📁 Estrutura do repositório
+## Estrutura do repositório
 
 ```text
 Trilha-Desenvolvimento-Fullstack/
+├── LICENSE
 ├── README.md
-├── introducao-ao-HTML/
-│   ├── desafio1/
-│   └── desafio2/
-├── Aprofundando-HTML/
-│   ├── Desafio1/
-│   ├── Desafio2/
-│   └── arquivos de aula
-├── introducao-ao-CSS/
-│   ├── Desafio1/
-│   └── Desafio2/
-├── Aprofundando-CSS/
-│   ├── desafios/
-│   ├── exercícios/
-│   └── arquivos de aula
-└── demais materiais e projetos de prática
+├── css-introducao/
+│   ├── desafio-1/
+│   │   └── desafio-1-smart-tv-estilo.txt
+│   └── desafio-2/
+│       └── desafio-2-home-hashtag.txt
+├── css-avancado/
+│   ├── box-model/
+│   ├── desafio-1/
+│   │   └── desafio-1-smart-tv-layout-avancado.txt
+│   ├── desafio-2/
+│   │   └── desafio-2-home-hashtag-avancado.txt
+│   ├── dimensoes-e-unidades/
+│   ├── pseudo-classes/
+│   ├── pseudo-elementos/
+│   ├── seletor-universal/
+│   ├── sombras/
+│   ├── tipos-de-posicionamento/
+│   └── tipos-de-visualizacao/
+├── html-introducao/
+│   ├── desafio-1/
+│   │   └── desafio-1-smart-tv.txt
+│   └── desafio-2/
+│       └── desafio-2-home-hashtag.txt
+├── html-avancado/
+│   ├── aula-2-e-3.html
+│   ├── conteudo-selecionado.html
+│   ├── desafio-1/
+│   │   └── desafio-1-semantica-mdn.txt
+│   ├── desafio-2/
+│   │   └── desafio-2-home-hashtag-avancada.txt
+│   ├── estrutura-documento.html
+│   └── formularios.html
+└── JavaScript-Impressionador/
+    ├── Modulo-1/
+    ├── Modulo-2/
+    ├── Modulo-3/
+    ├── Modulo-4/
+    └── Modulo-5/
 ```
 
-## 📚 Conteúdos abordados
+## Conteúdos principais
 
 ### HTML
 - Estrutura de páginas web
-- Tags semânticas
-- Formulários
-- Tabelas
-- Elementos multimídia
-- Organização de conteúdo
+- Tags semânticas e organização do documento
+- Formulários, tabelas e elementos multimídia
+- Citações, abreviações e detalhes de contato
+- Trabalhando com iframe e conteúdo complementar
 
 ### CSS
-- Seletores
-- Box model
-- Margin, padding e border
-- Posicionamento
-- Tipos de visualização
-- Sombras, bordas, espaçamentos e responsividade
+- Seletores, box model e espaçamento
+- Posicionamento, display e visualização
+- Sombras, bordas e arredondamento
 - Pseudoclasses e pseudo-elementos
+- Design de interfaces e organização de estilos
 
-### Prática e desafios
-- Exercícios guiados
-- Mini desafios com proposta de layout
-- Repetição para reforçar conceitos
-- Desenvolvimento de interfaces progressivas
+### JavaScript
+- Variáveis e tipos primitivos
+- Funções e métodos
+- Estruturas condicionais e de repetição
+- Objetos globais, arrays e manipulação de dados
 
-## 🧪 Como este repositório está sendo usado
+## Como usar este repositório
 
-Este repositório funciona como um portfólio de aprendizagem, onde cada aula, exercício e desafio representa um passo na evolução do estudo. A ideia é registrar a prática e facilitar a revisão dos conteúdos ao longo do tempo.
+Cada pasta representa uma etapa da formação, e os arquivos dentro dela servem como exercícios, práticas e desafios. A ideia é acompanhar a evolução do aprendizado e revisitar os temas sempre que necessário.
 
-## 🛤️ Roadmap de aprendizado
+## Status
 
-1. Fundamentos de HTML
-2. Estruturação de páginas web
-3. Introdução ao CSS
-4. Aprofundamento em layout e design
-5. Exercícios e desafios práticos
-6. Revisão e consolidação dos conceitos
-7. Evolução para JavaScript e tecnologias do ecossistema fullstack
+O repositório está em constante evolução e foi reorganizado para manter nomes mais claros e consistentes com o conteúdo de cada aula, exercício e desafio.
 
-## ✅ Status atual
-
-O repositório está em constante atualização conforme a trilha avança. A base atual inclui exercícios e projetos de front-end com foco em HTML e CSS.
-
-## 🔗 Referência
+## Referência
 
 - Hashtag Treinamentos
 - Formação de Desenvolvimento Fullstack
-
-## 📌 Observação
-
-Este repositório é um registro pessoal de estudo e prática. Ele tem como objetivo central consolidar o conhecimento e servir como referência para evolução contínua.
-
----
-
-Se você também está começando na área, vale lembrar: consistência e prática diária fazem toda a diferença.
