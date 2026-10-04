@@ -14,7 +14,10 @@ const cardapio = {
     "Suco Natural": 7
 };
 
-for (let item in cardapio) {
-    console.log(`Produto: ${item}, Preço: R$${cardapio[item].toLocaleString('pt-BR', { minimumFractionDigits: 2})}`);
+function listarCardapio(cardapio) {
+    for (let item in cardapio) {
+        console.log(`Produto: ${item}, Preço: R$${cardapio[item].toLocaleString('pt-BR', { minimumFractionDigits: 2})}`);
+    }
 }
 
+listarCardapio(cardapio);
