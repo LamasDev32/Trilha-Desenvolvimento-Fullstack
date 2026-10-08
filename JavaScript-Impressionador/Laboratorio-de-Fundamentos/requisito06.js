@@ -12,4 +12,5 @@ function calcularPontos(vitorias, empates) {
     return (vitorias * 3) + (empates * 1);
 }
 
-console.log(calcularPontos(5, 2)); // 17
+let resultado = calcularPontos(5, 2);
+console.log(`O time obteve ${resultado} pontos.`); // 17

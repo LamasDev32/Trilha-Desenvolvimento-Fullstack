@@ -9,7 +9,7 @@ Exemplo Saída: // 50
 */
 
 function calcularRendimento(valorInvestido, taxaJuros) {
-    return (valorInvestido * taxaJuros) / 100;
+    return valorInvestido * (taxaJuros / 100);
 }
 
 console.log(calcularRendimento(1000, 5)); // 50

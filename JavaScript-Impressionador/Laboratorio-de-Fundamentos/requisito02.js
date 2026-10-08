@@ -8,10 +8,10 @@ Exemplo Saída: // ['Ana', 'Beatriz', 'Carlos', ‘Elias’]
 
 */
 
-nomes = ['Ana', 'Elias', 'Carlos', 'Beatriz'];
+let nomes = ['Ana', 'Elias', 'Carlos', 'Beatriz', 'Zé'];
 
 function ordenarNomes(nomes) {
     return nomes.sort();
 }
 
-console.log(ordenarNomes(nomes)); // ['Ana', 'Beatriz', 'Carlos', 'Elias']
+console.log(ordenarNomes(nomes)); // ['Ana', 'Beatriz', 'Carlos', 'Elias', 'Zé']
