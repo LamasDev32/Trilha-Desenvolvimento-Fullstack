@@ -23,5 +23,5 @@ function ehPrimo(numero) {
     return true; // Se não for divisível por nenhum número, é primo
 }
 
-console.log(ehPrimo(19)); // true
+console.log(ehPrimo(7)); // true
 console.log(ehPrimo(4)); // false

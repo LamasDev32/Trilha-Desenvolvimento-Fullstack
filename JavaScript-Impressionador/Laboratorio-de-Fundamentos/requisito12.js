@@ -12,4 +12,4 @@ function contarPalavras(frase) {
     return palavras.length; // Retorna a quantidade de palavras
 }
 
-console.log(contarPalavras("Olá, tudo bem?")); // 3
+console.log(contarPalavras("Olá, tudo bem com você?")); // 3  

@@ -18,7 +18,7 @@ Exemplo Saída: // “Pessoa 1”
 function calcularDistancia(distancia1, distancia2) {
     if (distancia1 < distancia2) {
         return "Pessoa 1";
-    } else if (distancia2 < distancia1) {
+    } else if (distancia1 > distancia2) {
         return "Pessoa 2";
     } else if (distancia1 === distancia2) {
         return "Ambos estão a mesma distância";
@@ -27,7 +27,7 @@ function calcularDistancia(distancia1, distancia2) {
     }
 }
 
-console.log(calcularDistancia(10, 15)); // "Pessoa 1"
-console.log(calcularDistancia(20, 15)); // "Pessoa 2"
+console.log(calcularDistancia(25, 15)); // "Pessoa 1"
+console.log(calcularDistancia(10, 15)); // "Pessoa 2"
 console.log(calcularDistancia(30, 30)); // "Ambos estão a mesma distância"
 console.log(calcularDistancia(-5, 'trinta')); // "Valor inválido. Informe distâncias válidas."
