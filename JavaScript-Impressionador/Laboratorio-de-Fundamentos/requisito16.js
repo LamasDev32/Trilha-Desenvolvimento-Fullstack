@@ -5,10 +5,8 @@ seguinte substituição: a → 1, e → 2, i → 3, o → 4, u → 5. Crie uma s
 decodifique a frase, revertendo as substituições.
 Funções: codificar e decodificar
 Exemplo Entrada: // const frase = "a casa e o sol";
-const resultado = codificar(frase);
-const frase2 = "1 c1s2 2 4 s4l";
-const resultado2 = decodificar(frase2);
 Exemplo Saída: // "1 c1s2 2 4 s4l"
+
 // "a casa e o sol"
 
 */
@@ -44,4 +42,46 @@ function decodificar(frase) { // Função para decodificar a frase
 
 const frase2 = "1 c1s2 2 4 s4l";
 const resultado2 = decodificar(frase2);
-console.log(resultado2); // "a casa e o sol"
+console.log(resultado2); // "a casa e o sol" 
+
+console.log("--------------------------------------------------");
+
+function codificarRegex(frase) {
+    return frase.replace(/[aeiou]/g, function(match) { // Substitui todas as vogais na frase usando uma expressão regular
+        switch (match) { // Verifica qual vogal foi encontrada
+            case 'a':
+                return '1';
+            case 'e':
+                return '2';
+            case 'i':
+                return '3';
+            case 'o':
+                return '4';
+            case 'u':
+                return '5';
+        }
+    });
+}
+
+function decodificarRegex(frase) {
+    return frase.replace(/[12345]/g, function(match) { // Substitui todos os números correspondentes às vogais na frase usando uma expressão regular
+        switch (match) { // Verifica qual número foi encontrado
+            case '1':
+                return 'a';
+            case '2':
+                return 'e';
+            case '3':
+                return 'i';
+            case '4':
+                return 'o';
+            case '5':
+                return 'u';
+        }
+    });
+}
+
+const texto = "Este é um lindo dia para aprender JavaScript!";
+const textoCodificado = codificarRegex(texto);
+console.log(textoCodificado); // "2st2 2 5m l3nd4 d31 p1r1 1pr2nd2r J1v1Scr3pt!"
+const textoDecodificado = decodificarRegex(textoCodificado);
+console.log(textoDecodificado); // "Este é um lindo dia para aprender JavaScript!"
