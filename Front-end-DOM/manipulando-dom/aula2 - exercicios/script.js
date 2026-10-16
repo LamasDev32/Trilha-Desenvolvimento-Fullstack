@@ -19,9 +19,11 @@ function desfoco() {
 }
 
 function alterando() {
+    document.getElementById('imagem').style.transition = "all 1s";
     document.getElementById('imagem').src = "imagem2.png";
 }
 
 function voltando() {
+    document.getElementById('imagem').style.transition = "all 1s";
     document.getElementById('imagem').src = "imagem1.png";
 }
