@@ -1,27 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    <h2>Eventos em elementos HTML</h2>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h2>Eventos em elementos HTML</h2>
 
-    <p id="texto" onmouseover="passando()" onmouseout="saindo()">Passe o mouse aqui para mudar a cor do texto</p>
+        <p id="texto" onmouseover="mudarCor(this)" onmouseout="voltarCor(this)">
+            Passe o mouse aqui para mudar a cor do texto
+        </p>
 
-    <button onclick="alerta()">Click me</button>
+        <button onclick="alerta()">Click me</button>
 
-    <input id="input" onfocus="foco()" onblur="desfoco()" type="text" placeholder="Digite aqui: "/>
+        <input
+            id="input"
+            onfocus="foco(this)"
+            onblur="desfoco(this)"
+            type="text"
+            placeholder="Digite aqui: "
+        />
 
-    <img id="imagem" onmouseover="alterando()" onmouseout="voltando()" src="imagem1.png" alt="img"/>
+        <img
+            id="imagem"
+            onmouseover="alterando(this)"
+            onmouseout="voltando(this)"
+            src="imagem1.png"
+            alt="img"
+        />
 
-
-
-
-
-
-    <script script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>

@@ -1,29 +1,29 @@
-function passando() {
-    document.getElementById('texto').style.color = 'blue';
+mudarCor = (elemento) => {
+    elemento.style.color = 'red';
 }
 
-function saindo() {
-    document.getElementById('texto').style.color = '#333';
+voltarCor = (elemento) => {
+    elemento.style.color = 'black';
 }
 
-function alerta() {
-    alert("Botão clicado!");
+alerta = () => {
+    alert('Você clicou no botão!');
 }
 
-function foco() {
-    document.getElementById('input').placeholder = "Campo em foco";
+foco = (elemento) => {
+    elemento.placeholder = "Campo em foco";
 }
 
-function desfoco() {
-    document.getElementById('input').placeholder = " ";
+desfoco = (elemento) => {
+    elemento.placeholder = '';
 }
 
-function alterando() {
-    document.getElementById('imagem').style.transition = "all 1s";
-    document.getElementById('imagem').src = "imagem2.png";
+alterando = (elemento) => {
+    elemento.style.transition = "all 1s";
+    elemento.src = "imagem2.png";
 }
 
-function voltando() {
-    document.getElementById('imagem').style.transition = "all 1s";
-    document.getElementById('imagem').src = "imagem1.png";
+voltando = (elemento) => {
+    elemento.style.transition = "all 1s";
+    elemento.src = "imagem1.png";
 }
