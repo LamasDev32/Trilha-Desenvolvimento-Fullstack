@@ -1,0 +1,16 @@
+#meuElemento {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.671), black);
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+}
+
+.square {
+    border-radius: 0;
+}
+
+.circle {
+    border-radius: 100%;
+}
