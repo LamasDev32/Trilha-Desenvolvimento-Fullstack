@@ -1,4 +1,4 @@
-const div = document.getElementById("meuElemento");
+let meuElemento = document.getElementById("meuElemento");
 
 function tornarCirculo() {
     meuElemento.classList.add("circle");
@@ -6,8 +6,8 @@ function tornarCirculo() {
 }
 
 function tornarQuadrado() {
-    meuElemento.classList.remove('circle');
-    meuElemento.classList.add('square');
+    meuElemento.classList.remove("circle");
+    meuElemento.classList.add("square");
 }
 
 /* function alternarFormato() {
@@ -18,12 +18,15 @@ function tornarQuadrado() {
     }
 } */
 
-    function alternarFormato() {
-        meuElemento.classList.toggle('circle');
-        meuElemento.classList.toggle('square');
-    }
+function alternarFormato() {
+    meuElemento.classList.toggle("circle");
+    meuElemento.classList.toggle("square");
+}
 
-    function verificarClasse() {
-        meuElemento.classList.content('circle');
-        alert(meuElemento);
+function verificarClasse() {
+    if (meuElemento.classList.contains("circle")) {
+        alert("O elemento possui a classe circle");
+    } else {
+        alert("O elemento possui a classe square");
     }
+}
