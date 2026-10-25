@@ -30,5 +30,6 @@ function addTask(){
 }
 
 function limpar() {
-    taskList.remove()
+    taskList.remove();
+    window.location.reload();
 }
