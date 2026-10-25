@@ -10,9 +10,9 @@ form.addEventListener('submit', handleSubmit);
 
 const input = form.querySelector('input#password');
 
-input.addEventListener('keypress', function(event) {
-    if(event.key === "Enter") {
-        event.preventDefault();
+input.addEventListener('keypress', (e) => {
+    if(e.key === "Enter") {
+        e.preventDefault();
         console.log('Pressionar o Enter não envia o formulário!');
     }
 })
