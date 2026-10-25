@@ -5,11 +5,11 @@ body {
 }
 
 #container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    max-width: 37.5rem;
+    margin: 1.25rem auto;
+    padding: 1.25rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.3125rem;
     background-image: linear-gradient(rgba(71, 71, 71, 0.637), rgba(0, 0, 0, 0.829));
     color:#fff;
 }
@@ -20,12 +20,12 @@ ul {
 }
 
 button {
-    margin-top: 10px;
-    padding: 8px 12px;
+    margin-top: 0.625rem;
+    padding: 0.5rem 0.75rem;
     background-color: #ff6600d5;
     color: #fff;
     border: none;
-    border-radius: 3px;
+    border-radius: 0.1875rem;
     cursor: pointer;
     margin-left: 0.5rem;
     font-weight: bold;
@@ -33,14 +33,13 @@ button {
 }
 
 input {
-  height: 27px;
-  border: #03254975 2px solid;
-  border-radius: 4px;
-  margin-right: -0.4rem;
+  height: 1.6875rem;
+  border: #03254975 0.125rem solid;
+  border-radius: 0.25rem;
 }
 
 button:hover {
-    background-color: #5278a1;
+    background-color: #5278a1ad;
 }
 
 button:focus {
