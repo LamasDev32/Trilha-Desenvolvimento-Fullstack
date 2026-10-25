@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(black, rgba(0, 0, 0, 0.534));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 25rem;
+    color: #fff;
+}
+
+#btn {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76), black);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    transition: all .5s ease-in-out;
+}
+
+#btn:hover {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.829), rgba(0, 0, 0, 0.644));
+    color: rgba(0, 0, 0, 0.788);
+}
+
+#myForm {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(251, 255, 245);
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    width: 25rem;
+    height: 20rem;
+}
+
+#myForm input, button {
+    margin-bottom: 0.5rem;
+} 
