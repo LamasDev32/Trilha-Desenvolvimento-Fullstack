@@ -1,14 +1,14 @@
 #changeColor {
-width: 200px;
-            height: 200px;
-            background-color: #3498db; /* Cor azul inicial */
-            border-radius: 8px;
-            margin: 50px auto;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-family: Arial, sans-serif;
-            font-weight: bold;
+    width: 200px;
+    height: 200px;
+    background-color: #3498db; /* Cor azul inicial */
+    border-radius: 8px;
+    margin: 50px auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
 }
