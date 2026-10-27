@@ -1,17 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <h1>Preencha Essa Bagaça</h1>
+        </header>
 
+        <form>
+            <h2>Elementos de um formulário</h2>
 
+            <div class="content-form">
+                <label for="text">Login:</label>
+                <input type="text" id="text" />
+            </div>
 
+            <div class="content-form">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" />
+            </div>
 
-    <script src="script.js"></script>
-</body>
+            <div class="content-form">
+                <label for="email">Email</label>
+                <input type="email" id="email" />
+            </div>
+            
+            <div class="content-form">
+                <label for="data">Data Nascimento:</label>
+                <input type="date" id="data" />
+            </div>
+
+            <div class="content-form">
+                <label for="Checkox">Checkox</label>
+                <input type="checkbox" id="Checkox" />
+            </div>
+
+            <div class="content-form">
+                <label for="radio1">Ragnarok:</label>
+                <input type="radio" id="radio1" name="radioGrupo" />
+            </div>
+
+            <div class="content-form">
+                <label for="radio2">Mu Global:</label>
+                <input type="radio" id="radio2" name="radioGrupo" />
+            </div>
+
+            <div class="content-form">
+                <label for="file">File-Arquivo:</label>
+                <input type="file" id="file" />
+            </div>
+
+            <div class="content-form">
+                <label for="number">Número:</label>
+                <input type="number" id="number" />
+            </div>
+
+            <div class="content-form">
+                <label for="selecione">Selecione:</label>
+                <select name="GroupSelect" id="selecione">
+                    <option value="option1">Opção1</option>
+                    <option value="option2">Opção2</option>
+                    <option value="option3">Opção3</option>
+                    <option value="option4">Opção4</option>
+                </select>
+            </div>
+
+            <div class="content-form">
+                <label for="">Area de Texto: </label>
+                <textarea name="textarea" cols="20"  rows="10" id="textarea"></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Reset Form</button>
+        </form>
+        
+
+        <script src="script.js"></script>
+    </body>
 </html>
