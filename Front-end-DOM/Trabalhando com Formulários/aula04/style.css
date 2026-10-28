@@ -1,0 +1,33 @@
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    margin: 1rem;
+}
+
+form {
+    background-image: linear-gradient(black, rgba(0, 0, 0, 0.664));
+    color: #fff;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.3rem;
+}
+
+input[type="submit"] {
+    background-image: linear-gradient(black, rgba(0, 0, 0, 0.603));
+    color: #fff;
+    border-radius: 0.3rem;
+}
+
+input[type="submit"]:hover {
+    background-image: linear-gradient(white, black);
+    color: rgba(255, 228, 196, 0.548);
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+}
