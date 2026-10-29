@@ -39,6 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
         if (senha.value !== confirmarSenha.value) {
             console.log("As senhas não são iguais!");
             return false;
+        } else {
+            alert("Cadastro concluído com sucesso!");
         }
 
         return true; // Correção: A função precisa retornar true caso estejam iguais
