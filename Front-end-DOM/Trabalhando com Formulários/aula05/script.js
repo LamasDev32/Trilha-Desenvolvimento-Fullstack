@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function validarCamposObrigatorios() {
-        // Correção: querySelectorAll (com 's' minúsculo)
+        
         const camposObrigatorios = document.querySelectorAll(".obg");
         let camposValidos = true;
 
