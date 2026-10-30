@@ -12,14 +12,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function validarCamposObrigatorios() {
-        
+        // Correção: querySelectorAll (com 's' minúsculo)
         const camposObrigatorios = document.querySelectorAll(".obg");
         let camposValidos = true;
 
-        camposObrigatorios.forEach(campo => {
+        camposObrigatorios.forEach((campo) => {
             // Verifica se o valor está vazio (incluindo espaços em branco)
             if (!campo.value.trim()) {
-                console.log("Este campo é obrigatório:", campo.id || campo.name);
+                console.log(
+                    "Este campo é obrigatório:",
+                    campo.id || campo.name,
+                );
                 camposValidos = false;
             }
         });
@@ -28,19 +31,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function compararValores() {
-        const senha = document.getElementById('password');
-        const confirmarSenha = document.getElementById('confirmPassword');
+        const senha = document.getElementById("password");
+        const confirmarSenha = document.getElementById("confirmPassword");
 
         // Garante que os elementos existem antes de ler a propriedade .value
         if (!senha || !confirmarSenha) {
-            return true; 
+            return true;
         }
 
         if (senha.value !== confirmarSenha.value) {
             console.log("As senhas não são iguais!");
             return false;
-        } else {
-            alert("Cadastro concluído com sucesso!");
         }
 
         return true; // Correção: A função precisa retornar true caso estejam iguais
