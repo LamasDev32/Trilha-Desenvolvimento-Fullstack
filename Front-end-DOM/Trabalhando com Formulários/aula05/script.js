@@ -2,31 +2,31 @@ document.addEventListener("DOMContentLoaded", function () {
     const formulario = document.getElementById("myForm");
 
     formulario.addEventListener("submit", function (event) {
-        const camposValidos = validarCamposObrigatorios();
-        const senhasIguais = compararValores();
+        //Resetando mensgens erro
+        resetarMensagensDeErro();
 
-        // Se alguma das validações falhar, impede o envio
-        if (!camposValidos || !senhasIguais) {
+        if (!validarCamposObrigatorios()) {
+            event.preventDefault(); // impede a submissão do formulário se houver erros!
+        }
+
+        if (!compararValores()) {
             event.preventDefault();
         }
     });
 
     function validarCamposObrigatorios() {
-        // Correção: querySelectorAll (com 's' minúsculo)
-        const camposObrigatorios = document.querySelectorAll(".obg");
+        let camposObrigatorios = document.querySelectorAll(".obg");
+        // console.log(camposObrigatorios);
         let camposValidos = true;
 
-        camposObrigatorios.forEach((campo) => {
-            // Verifica se o valor está vazio (incluindo espaços em branco)
-            if (!campo.value.trim()) {
-                console.log(
-                    "Este campo é obrigatório:",
-                    campo.id || campo.name,
-                );
+        for (let i = 0; camposObrigatorios.length > i; i++) {
+            let campo = camposObrigatorios[i];
+
+            if (campo.value === "" || campo.value === null) {
+                exibirErro(campo, "Este campo é obrigatório");
                 camposValidos = false;
             }
-        });
-
+        }
         return camposValidos;
     }
 
@@ -34,16 +34,26 @@ document.addEventListener("DOMContentLoaded", function () {
         const senha = document.getElementById("password");
         const confirmarSenha = document.getElementById("confirmPassword");
 
-        // Garante que os elementos existem antes de ler a propriedade .value
-        if (!senha || !confirmarSenha) {
-            return true;
-        }
-
         if (senha.value !== confirmarSenha.value) {
-            console.log("As senhas não são iguais!");
+            exibirErro(confirmarSenha, "As senhas não coincidem.");
             return false;
         }
+        return true;
+    }
 
-        return true; // Correção: A função precisa retornar true caso estejam iguais
+    function exibirErro(elemento, mensagem) {
+        let mensagemErro =
+            elemento.parentElement.querySelector(".error-message");
+        mensagemErro.textContent = mensagem;
+        mensagemErro.style.display = "inline-block"; // exibir a mensagem de erro
+    }
+
+    function resetarMensagensDeErro() {
+        let mensagensErro = document.querySelectorAll(".error-message");
+        //console.log(mensagensErro);
+
+        for (let i = 0; i < mensagensErro.length; i++) {
+            mensagensErro[i].textContent = "";
+        }
     }
 });

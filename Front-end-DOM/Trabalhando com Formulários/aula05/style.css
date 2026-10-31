@@ -1,32 +1,21 @@
 h1 {
     text-align: center;
-    margin: 0 1rem 1rem;  
+    margin: 0 1rem 1rem;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 .form-group {
-    display: grid;
-    grid-template-columns: auto 1fr;  
-    width: 400px;
-    height: 50px;
     color: white;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 5px;
     border-left: 5px solid #00f;
     background-color: #333;
-    box-sizing: border-box;
     align-items: center;
     padding: 1rem;
 }
 
-button 
-    {width: 400px;
+button {
+    width: 400px;
     height: 30px;
     color: white;
     font-size: 1rem;
@@ -42,5 +31,10 @@ button
 button:hover {
     cursor: pointer;
     border: 2px solid #00f;
-    
+}
+
+.error-message {
+    color: red;
+    font-size: 12 px;
+    display: none; /* Inicialmente, as mensagens de erro estarão ocultas*/
 }
