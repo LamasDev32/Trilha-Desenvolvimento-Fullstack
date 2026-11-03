@@ -1,59 +1,65 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const formulario = document.getElementById("myForm");
+document.addEventListener('DOMContentLoaded', () => {
+  const formulario = document.getElementById("meuFormulario");
 
-    formulario.addEventListener("submit", function (event) {
-        //Resetando mensgens erro
-        resetarMensagensDeErro();
+  formulario.addEventListener("submit", (event) => {
+    // Resetando mensagens de erro anteriores
+    resetarMensagensDeErro();
 
-        if (!validarCamposObrigatorios()) {
-            event.preventDefault(); // impede a submissão do formulário se houver erros!
-        }
+    const camposValidos = validarCamposObrigatorios();
+    const senhasValidas = compararValores();
 
-        if (!compararValores()) {
-            event.preventDefault();
-        }
-    });
+    // Impede o envio se houver algum erro
+    if (!camposValidos || !senhasValidas) {
+      event.preventDefault();
+    }
+  });
 
-    function validarCamposObrigatorios() {
-        let camposObrigatorios = document.querySelectorAll(".obg");
-        // console.log(camposObrigatorios);
-        let camposValidos = true;
+  function validarCamposObrigatorios() {
+    const camposObrigatorios = document.querySelectorAll(".obrigatorio");
+    let camposValidos = true;
 
-        for (let i = 0; camposObrigatorios.length > i; i++) {
-            let campo = camposObrigatorios[i];
+    for (let i = 0; i < camposObrigatorios.length; i++) {
+      const campo = camposObrigatorios[i];
 
-            if (campo.value === "" || campo.value === null) {
-                exibirErro(campo, "Este campo é obrigatório");
-                camposValidos = false;
-            }
-        }
-        return camposValidos;
+      // trim() remove espaços em branco das pontas
+      if (campo.value.trim() === "") {
+        exibirErro(campo, "Este campo é obrigatório");
+        camposValidos = false;
+      }
+    }
+    return camposValidos;
+  }
+
+  function compararValores() {
+    const senha = document.getElementById("senha");
+    const confirmarSenha = document.getElementById("confirmarSenha");
+
+    // Se algum dos campos estiver vazio, a validação de obrigatório já trata disso
+    if (senha.value.trim() === "" || confirmarSenha.value.trim() === "") {
+      return false;
     }
 
-    function compararValores() {
-        const senha = document.getElementById("password");
-        const confirmarSenha = document.getElementById("confirmPassword");
-
-        if (senha.value !== confirmarSenha.value) {
-            exibirErro(confirmarSenha, "As senhas não coincidem.");
-            return false;
-        }
-        return true;
+    if (senha.value !== confirmarSenha.value) {
+      exibirErro(confirmarSenha, "As senhas não coincidem.");
+      return false;
     }
+    return true;
+  }
 
-    function exibirErro(elemento, mensagem) {
-        let mensagemErro =
-            elemento.parentElement.querySelector(".error-message");
-        mensagemErro.textContent = mensagem;
-        mensagemErro.style.display = "inline-block"; // exibir a mensagem de erro
+  function exibirErro(elemento, mensagem) {
+    const mensagemErro = elemento.parentElement.querySelector(".error-message");
+    if (mensagemErro) {
+      mensagemErro.textContent = mensagem;
+      mensagemErro.style.display = "inline-block"; // exibe a mensagem de erro
     }
+  }
 
-    function resetarMensagensDeErro() {
-        let mensagensErro = document.querySelectorAll(".error-message");
-        //console.log(mensagensErro);
+  function resetarMensagensDeErro() {
+    const mensagensErro = document.querySelectorAll(".error-message");
 
-        for (let i = 0; i < mensagensErro.length; i++) {
-            mensagensErro[i].textContent = "";
-        }
+    for (let i = 0; i < mensagensErro.length; i++) {
+      mensagensErro[i].textContent = "";
+      mensagensErro[i].style.display = "none"; // oculta o elemento de erro novamente
     }
+  }
 });

@@ -1,40 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 h1 {
-    text-align: center;
-    margin: 0 1rem 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 32rem;
+    margin-right: 2rem;
 }
 
 .form-group {
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 5px;
-    border-left: 5px solid #00f;
-    background-color: #333;
-    align-items: center;
-    padding: 1rem;
-}
-
-button {
-    width: 400px;
-    height: 30px;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    padding-left: 1rem;
-    border-radius: 5px;
-    border-left: 5px solid #00f;
-    background-color: #333;
-    box-sizing: border-box;
-    align-items: center;
-}
-
-button:hover {
-    cursor: pointer;
-    border: 2px solid #00f;
+    margin-bottom: 20px;
 }
 
 .error-message {
     color: red;
-    font-size: 12 px;
-    display: none; /* Inicialmente, as mensagens de erro estarão ocultas*/
+    font-size: 12px;
+    display: none; /* Inicialmente, as mensagens de erro estarão ocultas */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all .3s ease-in-out;
+}
+
+button:hover {
+    background-color: #45a049;
 }
