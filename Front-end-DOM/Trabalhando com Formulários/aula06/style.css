@@ -45,6 +45,12 @@ input[type="submit"] {
     align-items: center;
 }
 
+input[type="submit"]:hover {
+    background: #00991a;
+    width: 5rem;
+    transition: width 0.3s ease-in-out;   
+}    
+
 .content-form label {
     margin-right: 0.2rem;
 }
